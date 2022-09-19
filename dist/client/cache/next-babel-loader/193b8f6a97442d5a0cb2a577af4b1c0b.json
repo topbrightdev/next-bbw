@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export { default } from \"./ProfileSidebar\";",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

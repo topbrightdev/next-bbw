@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import _extends from \"@babel/runtime/helpers/esm/extends\";\nimport _objectWithoutProperties from \"@babel/runtime/helpers/esm/objectWithoutProperties\";\nvar __jsx = React.createElement;\nimport React from \"react\";\nimport styled from \"styled-components\";\nimport { color, space, typography, shadow } from \"styled-system\";\nvar Paragraph = styled.a.withConfig({\n  displayName: \"A__Paragraph\",\n  componentId: \"sc-1czism6-0\"\n})([\"font-size:20px;font-weight:300;letter-spacing:-0.66px;line-height:35px;\", \";\", \";\", \";\", \";&:hover,&:active,&.active{\", \";text-decoration:none;}\"], color, space, typography, shadow, color);\n\nvar A = function A(_ref) {\n  var _ref$href = _ref.href,\n      href = _ref$href === void 0 ? \"#\" : _ref$href,\n      props = _objectWithoutProperties(_ref, [\"href\"]);\n\n  return __jsx(Paragraph, _extends({\n    href: href,\n    color: \"secondary\"\n  }, props));\n};\n\nexport default A;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

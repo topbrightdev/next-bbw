@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export { default } from \"./ModalApplication\";",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

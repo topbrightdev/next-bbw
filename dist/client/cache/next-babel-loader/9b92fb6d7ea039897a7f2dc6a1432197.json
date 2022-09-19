@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export const breakpoints = {\n  sm: 576,\n  //Small screen start\n  md: 768,\n  //Medium screen start\n  lg: 992,\n  //Large screen start\n  xl: 1200 //Extra Large screen start\n\n};\nexport const device = {\n  sm: `(min-width: ${breakpoints.sm}px)`,\n  md: `(min-width: ${breakpoints.md}px)`,\n  lg: `(min-width: ${breakpoints.lg}px)`,\n  xl: `(min-width: ${breakpoints.xl}px)`\n};",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

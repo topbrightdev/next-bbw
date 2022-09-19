@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import _extends from \"@babel/runtime/helpers/esm/extends\";\nimport _objectWithoutProperties from \"@babel/runtime/helpers/esm/objectWithoutProperties\";\nvar __jsx = React.createElement;\nimport React from \"react\";\nimport styled from \"styled-components\";\nimport { color, background, space, border, typography, shadow, flexbox, layout } from \"styled-system\";\nvar BadgeSolid = styled.span.withConfig({\n  displayName: \"Badge__BadgeSolid\",\n  componentId: \"sc-1cwl6lv-0\"\n})([\"font-size:13px;font-weight:700;letter-spacing:-0.41px;border-radius:5px;padding:4px 12px;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;\", \";\", \";\", \";\", \";\", \";\", \";\", \";\", \";\"], color, background, border, space, typography, shadow, flexbox, layout);\n\nvar Badge = function Badge(_ref) {\n  var _ref$color = _ref.color,\n      color = _ref$color === void 0 ? \"light\" : _ref$color,\n      _ref$bg = _ref.bg,\n      bg = _ref$bg === void 0 ? \"primary\" : _ref$bg,\n      rest = _objectWithoutProperties(_ref, [\"color\", \"bg\"]);\n\n  return __jsx(BadgeSolid, _extends({\n    color: color,\n    border: \"1px solid\",\n    borderColor: bg,\n    bg: bg\n  }, rest));\n};\n\nexport default Badge;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import styled from \"styled-components\";\nimport { color, space, layout, flexbox, grid, typography, background, border, position, shadow } from \"styled-system\";\nconst Box = styled.div.withConfig({\n  displayName: \"Box\",\n  componentId: \"sc-135ksyw-0\"\n})([\"box-sizing:border-box;min-width:0;\", \";\", \";\", \";\", \";\", \";\", \";\", \";\", \";\", \";\", \";\"], color, space, layout, flexbox, grid, typography, background, border, position, shadow);\nexport default Box;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

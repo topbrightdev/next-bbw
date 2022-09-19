@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export var addDays = function addDays(days) {\n  var date = new Date(Date.now());\n  date.setDate(date.getDate() + days);\n  return date;\n};",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

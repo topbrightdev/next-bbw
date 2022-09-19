@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from \"react\";\nimport styled from \"styled-components\";\nimport { color, space, typography, shadow } from \"styled-system\";\nconst SpanStyled = styled.span.withConfig({\n  displayName: \"Span__SpanStyled\",\n  componentId: \"sc-1quz57z-0\"\n})([\"\", \";\", \";\", \";\", \";\"], color, space, typography, shadow);\n\nconst Span = (_ref) => {\n  let props = Object.assign({}, _ref);\n  return __jsx(SpanStyled, props);\n};\n\nexport default Span;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

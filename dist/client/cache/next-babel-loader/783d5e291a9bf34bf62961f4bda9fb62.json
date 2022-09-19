@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export const addDays = days => {\n  const date = new Date(Date.now());\n  date.setDate(date.getDate() + days);\n  return date;\n};",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

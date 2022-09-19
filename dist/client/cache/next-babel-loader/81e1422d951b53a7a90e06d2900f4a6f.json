@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import _extends from \"@babel/runtime/helpers/esm/extends\";\nimport _objectWithoutProperties from \"@babel/runtime/helpers/esm/objectWithoutProperties\";\nvar __jsx = React.createElement;\nimport React from \"react\";\nimport Box from \"./Box\";\n\nvar Section = function Section(_ref) {\n  var _ref$variant = _ref.variant,\n      variant = _ref$variant === void 0 ? \"section\" : _ref$variant,\n      rest = _objectWithoutProperties(_ref, [\"variant\"]);\n\n  return variant === \"hero\" ? __jsx(Box, _extends({\n    pt: [\"8.4375rem\", null, null, \"11.25rem\"],\n    pb: [\"3.75rem\", null, null, \"8.4375rem\"]\n  }, rest)) : __jsx(Box, _extends({\n    py: [\"3.75rem\", null, null, \"7.5rem\"]\n  }, rest));\n};\n\nexport default Section;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

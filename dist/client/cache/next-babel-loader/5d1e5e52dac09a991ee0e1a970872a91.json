@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from 'react';\n\nfunction Tag(props) {\n  const {\n    children\n  } = props;\n  return __jsx(\"span\", {\n    className: \"bg-dark-gray min-width-px-96 mr-3 text-center rounded-3 px-6 py-1 font-size-3 text-white mt-2 d-inline-block\"\n  }, children);\n}\n\nexport default Tag;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

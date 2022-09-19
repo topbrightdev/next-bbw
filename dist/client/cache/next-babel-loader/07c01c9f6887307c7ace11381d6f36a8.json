@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import _extends from \"@babel/runtime/helpers/esm/extends\";\nvar __jsx = React.createElement;\nimport React from \"react\";\nimport styled from \"styled-components\";\nimport { color, space, typography, shadow } from \"styled-system\";\nvar SpanStyled = styled.span.withConfig({\n  displayName: \"Span__SpanStyled\",\n  componentId: \"sc-1quz57z-0\"\n})([\"\", \";\", \";\", \";\", \";\"], color, space, typography, shadow);\n\nvar Span = function Span(_ref) {\n  var props = _extends({}, _ref);\n\n  return __jsx(SpanStyled, props);\n};\n\nexport default Span;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

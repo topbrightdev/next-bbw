@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export { default } from \"./Search\";",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

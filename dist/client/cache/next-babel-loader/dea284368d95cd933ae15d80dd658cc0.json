@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import styled from \"styled-components\";\nvar List = styled.ul.withConfig({\n  displayName: \"List\",\n  componentId: \"sc-49ppb-0\"\n})([\"li{color:\", \";font-size:16px;font-weight:500;letter-spacing:-0.5px;line-height:28px;margin-left:20px;margin-bottom:17px;display:flex;&:before{content:\\\"\\\";min-width:10px;max-width:10px;min-height:10px;max-height:10px;background-color:\", \";display:block;border-radius:500px;margin-right:15px;margin-top:10px;}}\"], function (_ref) {\n  var theme = _ref.theme;\n  return theme.colors.text;\n}, function (_ref2) {\n  var theme = _ref2.theme;\n  return theme.colors.dark;\n});\nexport default List;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

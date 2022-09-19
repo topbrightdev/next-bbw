@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export const cleanImage = logo => {\n  let point = logo.indexOf(\"(\");\n  let newImage = logo.slice(point);\n  return newImage.substring(1, newImage.length - 1);\n};",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "pages404": true,
+  "basePath": "",
+  "redirects": [],
+  "rewrites": [],
+  "headers": [],
+  "dynamicRoutes": [
+    {
+      "page": "/Partner/[partner]",
+      "regex": "^\\/Partner\\/([^/]+?)(?:\\/)?$",
+      "namedRegex": "^/Partner/(?<partner>[^/]+?)(?:/)?$",
+      "routeKeys": ["partner"]
+    }
+  ]
+}

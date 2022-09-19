@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "import firebase from 'firebase/app';\nimport \"firebase/auth\";\nimport \"firebase/firestore\";\nimport \"firebase/analytics\";\nconst firebaseConfig = {\n  apiKey: process.env.FIREBASE_API_KEY,\n  authDomain: process.env.FIREBASE_AUTH_DOMAIN,\n  databaseURL: process.env.FIREBASE_DATABASE_URL,\n  projectId: process.env.FIREBASE_PROJECT_ID,\n  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,\n  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,\n  appId: process.env.FIREBASE_APP_ID,\n  measurementId: process.env.FIREBASE_MEASUREMENT_ID\n};\n\nif (!firebase.apps.length) {\n  firebase.initializeApp(firebaseConfig);\n}\n\nconst app = firebase.app();\nconst auth = firebase.auth();\nconst db = firebase.firestore();\nconst now = firebase.firestore.Timestamp.now();\nexport { auth, db, now };\nconsole.log(app.name ? 'Firebase Mode Activated!' : 'Firebase not working :(');",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "export var truncate = function truncate(str) {\n  var n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 175;\n  var useWordBoundary = arguments.length > 2 ? arguments[2] : undefined;\n\n  if (str.length <= n) {\n    return str;\n  }\n\n  var subString = str.substr(0, n - 1); // the original check\n\n  return (useWordBoundary ? subString.substr(0, subString.lastIndexOf(\" \")) : subString) + \"...\";\n};",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

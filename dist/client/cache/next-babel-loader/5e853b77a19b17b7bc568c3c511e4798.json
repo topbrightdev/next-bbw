@@ -1,0 +1,7 @@
+{
+  "ast": null,
+  "code": "var __jsx = React.createElement;\nimport React from \"react\";\nimport PageWrapper from \"../components/PageWrapper\";\nimport Hero from \"../sections/landing3/Hero\";\nimport Services from \"../sections/landing3/Services\";\nimport FeaturedJobs from \"../sections/landing3/FeaturedJobs\";\nimport Content1 from \"../sections/landing3/Content1\";\nimport Content2 from \"../sections/landing3/Content2\";\nimport Slider from \"../sections/landing3/Slider\";\nimport Pricing from \"../sections/landing3/Pricing\";\n\nconst IndexPage = () => {\n  return __jsx(React.Fragment, null, __jsx(PageWrapper, {\n    headerConfig: {\n      bgClass: \"dynamic-sticky-bg\"\n    }\n  }, __jsx(Hero, null)));\n};\n\nexport default IndexPage;",
+  "map": null,
+  "metadata": {},
+  "sourceType": "module"
+}

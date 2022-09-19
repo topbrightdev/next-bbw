@@ -1,0 +1,254 @@
+// stylelint-disable selector-no-qualifying-type
+
+//
+// Base styles
+//
+.btn-white {
+  border: 1px solid $body-color !important;
+  background-color: transparent;
+}
+.radio--button {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  accent-color: black;
+}
+.btn {
+  display: inline-block;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  color: $body-color;
+  text-align: center;
+  text-decoration: if($link-decoration == none, null, none);
+  white-space: $btn-white-space;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: $btn-border-width solid transparent;
+  @include button-size(
+    $btn-padding-y,
+    $btn-padding-x,
+    $btn-font-size,
+    $btn-line-height,
+    $btn-border-radius
+  );
+  @include transition($btn-transition);
+
+  @include hover() {
+    color: $body-color;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+
+  &:not(:disabled):not(.disabled) {
+    cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+
+    &:active,
+    &.active {
+      @include box-shadow($btn-active-box-shadow);
+
+      &:focus {
+        @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      }
+    }
+  }
+}
+
+// Future-proof disabling of clicks on `<a>` elements
+a.btn.disabled,
+fieldset:disabled a.btn {
+  pointer-events: none;
+}
+
+//
+// Alternate buttons
+//
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    @include button-outline-variant($value);
+  }
+}
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: $font-weight-normal;
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  @include hover() {
+    color: $link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+
+  // No need for an active state here
+}
+
+//
+// Button Sizes
+//
+
+.btn-lg {
+  @include button-size(
+    $btn-padding-y-lg,
+    $btn-padding-x-lg,
+    $btn-font-size-lg,
+    $btn-line-height-lg,
+    $btn-border-radius-lg
+  );
+}
+
+.btn-sm {
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $btn-font-size-sm,
+    $btn-line-height-sm,
+    $btn-border-radius-sm
+  );
+}
+
+//
+// Block button
+//
+
+.btn-block {
+  display: block;
+  width: 100%;
+
+  // Vertically space out multiple block buttons
+  + .btn-block {
+    margin-top: $btn-block-spacing-y;
+  }
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.ant-radio .ant-radio-inner{
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.ant-radio-checked .ant-radio-inner{
+  border-color: #2B3940 !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+.ant-radio-checked .ant-radio-inner:after{
+  background-color: #2B3940 !important;
+}
+.ant-radio-inner::after {
+  position: absolute;
+  top: 54%;
+  left: 55%;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-top: -10px;
+  margin-left: -10px;
+  background-color: #1890ff;
+  border-top: 0;
+  border-left: 0;
+  border-radius: 16px;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+  content: ' ';
+}
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.transition-duration-500{
+  transition-duration: 500ms !important;
+}
+.transition-duration-300{
+  transition-duration: 300ms !important;
+}
+.top-0{
+  top:0 !important
+}
+.left-0{
+  left:0 !important
+}
+.right-0{
+  right: 0 !important;
+}
+.z-2000{
+  z-index: 2000 !important;
+}
+.z-1000{
+  z-index: 1000 !important
+}
+.translate-x-full{
+  transform: translateX(100%) !important;
+}
+.translate-x-0{
+  transform: translateX(0px) !important;
+}
+.transition-opacity{
+  transition-property: opacity !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+.opacity-0{
+  opacity:0 !important
+}
+.opacity-50{
+  opacity: 0.5 !important;
+}
+.w-screen{
+  width: 100vw;
+}
+
+
+.w-30{
+  width: 30%
+}
